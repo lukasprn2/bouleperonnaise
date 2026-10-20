@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La Boule Péronnaise – Club de pétanque</title>
+<meta name="description" content="La Boule Péronnaise (L.B.P), club de pétanque : actualités, calendrier, classement et licences.">
+<meta name="theme-color" content="#2a4aa8"><link rel="manifest" href="manifest.json"><link rel="icon" href="logo.svg">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div class="wrap bar"><a class="brand" href="#accueil"><img src="logo.svg" alt="">La Boule Péronnaise</a>
+<button id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+<nav id="menu"><ul><li><a href="#actualites">Actualités</a></li><li><a href="#calendrier">Calendrier</a></li><li><a href="#classement-section">Classement</a></li><li><a href="#licence-section">Licence</a></li><li><a href="#galerie-section">Galerie</a></li><li><a href="#club">Le club</a></li><li><a href="#faq-section">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></nav></div></header>
+<main>
+<div class="hero" id="accueil"><div class="wrap"><div><h1>La Boule Péronnaise</h1>
+<p>Un nouveau club de pétanque, ouvert à tous. Venez jouer, rencontrer le club et prendre votre licence pour la saison.</p>
+<a class="btn" href="#licence-section">Prendre une licence</a><a class="btn alt" href="#calendrier">Voir le calendrier</a></div>
+<img class="crest" src="logo.svg" alt="Blason de La Boule Péronnaise"></div></div>
+<div class="next" id="next"></div>
+<section id="actualites"><div class="wrap"><h2>Actualités</h2><p class="lead">Les dernières nouvelles du club.</p><div class="grid" id="actus"></div></div></section>
+<section id="calendrier" class="gris"><div class="wrap"><h2>Calendrier</h2><p class="lead">Concours et rendez-vous à venir.</p><ul class="list" id="events"></ul></div></section>
+<section id="classement-section"><div class="wrap"><h2>Classement</h2><p class="lead">Classement des joueurs du club.</p><div style="overflow-x:auto"><table><thead><tr><th>Rang</th><th>Joueur</th><th>Parties</th><th>Points</th></tr></thead><tbody id="classement"></tbody></table></div></div></section>
+<section id="licence-section" class="gris"><div class="wrap"><h2>Prendre ou renouveler sa licence</h2><p class="lead">Remplissez le formulaire : votre messagerie s’ouvre avec la demande prête à envoyer. Un membre du bureau vous recontacte pour finaliser l’inscription et le règlement.</p>
+<form id="licence"><label>Nom<input name="nom" required autocomplete="family-name"></label><label>Prénom<input name="prenom" required autocomplete="given-name"></label>
+<label>Date de naissance<input type="date" name="naiss" required></label><label>Téléphone<input type="tel" name="tel" required autocomplete="tel"></label>
+<label>E-mail<input type="email" name="mail" required autocomplete="email"></label><label>Catégorie<select name="cat" id="cat"></select></label>
+<div class="prix" id="prix"></div><button class="btn" type="submit">Envoyer ma demande</button></form></div></section>
+<section id="galerie-section"><div class="wrap"><h2>Galerie</h2><p class="lead">Le club en images.</p><div class="grid" id="galerie"></div></div></section>
+<section id="club" class="gris"><div class="wrap"><h2>Le club</h2><p class="lead">Les membres du bureau et nos partenaires.</p><div class="grid" id="bureau"></div>
+<h3 style="font-size:1.9rem;margin:44px 0 16px;color:var(--bleu-n)">Nos partenaires</h3><div class="grid" id="partenaires"></div></div></section>
+<section id="faq-section"><div class="wrap"><h2>Questions fréquentes</h2><p class="lead"></p><div id="faq" style="max-width:720px"></div></div></section>
+<section id="contact" class="gris"><div class="wrap"><h2>Contact</h2><p class="lead"></p><div class="contact"><div id="contact-info"></div>
+<iframe title="Plan d’accès" style="width:100%;min-height:300px;border:1px solid var(--ligne);border-radius:6px" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=2.90%2C49.90%2C2.96%2C49.95&amp;layer=mapnik"></iframe></div></div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> La Boule Péronnaise (L.B.P). Tous droits réservés.</div></footer>
+<script src="data.js"></script><script src="app.js"></script></body></html>
